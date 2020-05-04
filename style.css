@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+body, .main, .cover {
+    position: fixed;
+    top: 0;
+}
+
+.main {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+.cover {
+    width: 1440px;
+    margin: 0 10vw;
+    top: 0;
+    height: 500px;
+    background-color: lightgreen;
+    background-position: contain;
+    background-size: contain;
+}
+.nav {
+    background-color: gray;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cover-text {
+    text-align: center;
+    width: 980px;
+    margin: auto;
+    background-color: lightblue;
+    margin-top: 50px;
+}
