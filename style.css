@@ -1,33 +1,40 @@
-body {
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input, abbr, article, aside, command, details, figcaption, figure, footer, header, hgroup, mark, meter, nav, output, progress, section, summary, time {
     margin: 0;
+    padding: 0;
 }
 
-body, .main {
-    position: fixed;
-    top: 0;
+
+body {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    display: block;
+    position: relative;
+    z-index: 1;
 }
 
 .main {
     font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    background-color: green;
 }
+
 
 .cover {
     width: 1440px;
     height: 540px;
     margin: 0 10vw;
-    top: 0;
     /* background-color: lightgreen; */
     background-image: url(cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 50%;
     background-position-y: 100%;
+    padding: 80px;
+    box-sizing: border-box;
 }
 .nav {
     background-color: gray;
     width: 80%;
     margin: auto;
-    margin-top: 80px;
 }
 
 .nav-links {
@@ -45,16 +52,29 @@ body, .main {
 }
 
 .sub-heading {
-    background-color: lightsalmon;
-    display: grid;
-    grid-template-columns: auto, auto, auto, auto;
-    grid-template-rows: 200px;
-    position: fixed;
+    width: 1440px;
+    height: 540px;
+    margin: 0 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.sub-heading * {
+    height: 200px;
+    width: 100%;
+    margin: 2px;
+    background-size: contain;
 }
 
 .five-s {
     background-color: red;
 }
 .five-c {
-    background-color: green;
+    background-color:blue;
+}
+.birthday {
+    background-color: gray;
+}
+.supplier {
+    background-color: teal;
 }
