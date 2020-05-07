@@ -3,7 +3,6 @@ html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, b
     padding: 0;
 }
 
-
 body {
     margin-top: 0 !important;
     padding-top: 0 !important;
@@ -14,15 +13,12 @@ body {
 
 .main {
     font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
-    background-color: lightgreen;
 }
-
 
 .cover {
     width: 1440px;
     height: 540px;
     margin: 0 10vw;
-    /* background-color: lightgreen; */
     background-image: url(cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,10 +27,11 @@ body {
     padding: 80px;
     box-sizing: border-box;
 }
+
 .nav {
     width: 1024px;
     margin: auto;
-    height: 50px;
+    height: 40px;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
@@ -51,6 +48,8 @@ body {
     list-style: none;
     display: flex;
     align-items: center;
+    text-align: center;
+    justify-content: center;
     color: white;
     text-shadow: 1px 1px 1px gray;
     background: linear-gradient(
@@ -63,7 +62,7 @@ body {
     border-left-width: 0px;
     border-top-width: 0px;
     border-bottom-width: 0px;
-    height: 50px;
+    height: 40px;
     width: 100px;
 }
 .nav a {
@@ -73,15 +72,14 @@ body {
 }
 .nav-links {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(9, auto);
 }
 .nav-link:hover {
     background: green;
 }
 #search {
-    width: 224px;
+    min-width: 224px;
 }
 #searchbar {
     width: 150px;
@@ -89,12 +87,22 @@ body {
     border-radius: 25px;
 }
 
+
 .cover-text {
     text-align: center;
     width: 980px;
     margin: auto;
-    background-color: lightblue;
     margin-top: 50px;
+    color: white;
+    text-shadow: 1px 1px 1px gray;
+    font-weight: lighter;
+}
+.title {
+    height: 90px;
+    overflow: hidden;
+}
+.title, .everyone, .link {
+    margin: 10px;
 }
 
 .sub-heading {
